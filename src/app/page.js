@@ -94,9 +94,6 @@ export default function Home() {
 
     setIsSubmitting(true);
 
-    const TELEGRAM_TOKEN = "8993116119:AAEPD5_VZKXnbAGyGDIJgg3-60T4S-LQCD8";
-    const CHAT_ID = "826195106";
-
     const attendance =
       status === "yes" ? "Албатта боради 👍" : "Афсуски, бора олмайди 😔";
     const guestCount = status === "yes" ? guests : "0";
