@@ -1,0 +1,17 @@
+export async function POST(request) {
+  const { text } = await request.json();
+
+  await fetch(
+    `https://api.telegram.org/bot${process.env.TELEGRAM_TOKEN}/sendMessage`,
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        chat_id: process.env.CHAT_ID,
+        text: text,
+      }),
+    }
+  );
+
+  return Response.json({ ok: true });
+}
