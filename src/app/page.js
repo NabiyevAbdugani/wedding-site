@@ -204,7 +204,7 @@ export default function Home() {
                 {timeLeft.minutes}
               </span>
               <span className="text-[9px] text-emerald-200/50 uppercase tracking-wider block mt-0.5">
-                Дақ
+                Дақиқа
               </span>
             </div>
             <div className="bg-white/[0.04] border border-amber-400/30 rounded-xl p-2.5 backdrop-blur-sm shadow-[0_0_10px_rgba(245,158,11,0.1)]">
